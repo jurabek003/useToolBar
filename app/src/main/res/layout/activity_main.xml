@@ -5,13 +5,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 <com.google.android.material.appbar.AppBarLayout
     android:layout_width="match_parent"
+    android:theme="@style/Widget.AppCompat.Toolbar"
     android:layout_height="wrap_content">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:layout_scrollEffect="compress"
         android:layout_height="?actionBarSize">
         <include layout="@layout/bar_layout"/>
     </androidx.appcompat.widget.Toolbar>
